@@ -1,0 +1,29 @@
+<h1>WELCOME TO PALETTOR!</h1>
+<p>Amazing log-in page.</p>
+
+
+<!-- create a form for the new user, then goes to the create page
+ -->
+
+
+ <%= form_for @user do |f| %>
+
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name, :autofocus true %>
+  </p>
+
+  <p>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </p>
+
+  <p>
+    <%= f.label :password_confirmation %>
+    <%= f.url_field :password_confirmation %>
+  </p>
+
+  <%= f.label :submit %>
+  <%= f.submit %>
+
+<% end %>

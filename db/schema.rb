@@ -11,12 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150530022430) do
+ActiveRecord::Schema.define(version: 20150530050816) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "colors", force: :cascade do |t|
+  create_table "palettes", force: :cascade do |t|
+    t.string   "name"
+    t.string   "style"
+    t.text     "description"
     t.string   "color1"
     t.string   "color2"
     t.string   "color3"
@@ -24,14 +27,7 @@ ActiveRecord::Schema.define(version: 20150530022430) do
     t.string   "color5"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "palettes", force: :cascade do |t|
-    t.string   "name"
-    t.string   "style"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -39,6 +35,8 @@ ActiveRecord::Schema.define(version: 20150530022430) do
     t.string   "occupation"
     t.text     "website"
     t.text     "image"
+    t.string   "password_digest"
+    t.text     "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
