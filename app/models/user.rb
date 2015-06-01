@@ -15,4 +15,5 @@
 
 class User  < ActiveRecord::Base
   has_many :palettes
+  has_secure_password
 end
