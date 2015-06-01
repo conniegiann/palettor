@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+
+.colorbox {
+  display: inline-block;
+  margin: auto;
+}
+
+.swatch {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
