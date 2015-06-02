@@ -1,11 +1,18 @@
 == Color Palette Picker. 
 
-aka PALETTOR (or until I find a clever name.) >.<
+aka PALETTOR (or until I find a clever/better name.) >.<
 
-* Using Postgresql
-* Deploying on Heroku.
+Basic fucntionality up and running.
 
+User is able to login, create a color palette, edit and delete.
+Also, view all created palettes.
 
+TODO: Replace forms with jQuery color plugins or own JS.
+      Make it look fancy.
+      Logo, fonts ect.
+
+  * Using Postgresql
+  * Deploying on Heroku.
 
 Project 1 for General Assembly, Sydney.
 By Connie Giannopoulos.

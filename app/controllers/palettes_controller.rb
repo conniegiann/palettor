@@ -13,11 +13,32 @@ class PalettesController < ApplicationController
   end
 
   def index
+    @palettes = Palette.all
   end
 
   def show
     @palette = Palette.find params[:id]
   end
+
+  def edit
+    @palette = Palette.find params[:id]
+  end
+
+  def update
+    @palette = Palette.find params[:id]
+    @palette.update palette_params
+    redirect_to @palette
+  end
+
+  def destroy
+    @palette = Palette.find params[:id]
+    @palette.destroy
+    redirect_to @palette
+  end
+
+
+
+
 
   private
   def palette_params
