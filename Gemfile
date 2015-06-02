@@ -31,6 +31,8 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
 
 gem 'haml'
+gem 'bootstrap-sass'
+
 
 gem 'remove_turbolinks'
 
