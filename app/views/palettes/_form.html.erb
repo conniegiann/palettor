@@ -1,0 +1,46 @@
+<%= form_for @palette do |f| %>
+
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :style %>
+    <%= f.text_field :style %>
+  </p>
+
+  <p>
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </p>
+
+  <p>
+    <%= f.label :color1 %>
+    <%= f.color_field :color1 %>
+  </p>
+
+  <p>
+    <%= f.label :color2 %>
+    <%= f.color_field :color2 %>
+  </p>
+
+  <p>
+    <%= f.label :color3 %>
+    <%= f.color_field :color3 %>
+  </p>
+
+  <p>
+    <%= f.label :color4 %>
+    <%= f.color_field :color4 %>
+  </p>
+
+  <p>
+    <%= f.label :color5 %>
+    <%= f.color_field :color5 %>
+  </p>
+
+  <p> <%= f.submit  %></p>
+
+
+<% end  %>
