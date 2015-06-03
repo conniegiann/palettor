@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "pages";
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -23,18 +24,28 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   margin-left: 80px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
 }
 
-
-a {
-  text-decoration: none;
-}
 
 nav li {
   display: inline-block;
   text-decoration: none;
   font-weight: 800;
+}
 
+
+.navbar-brand {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 24px;
+}
+
+
+li {
+  text-decoration: none;
 }
 
 /*### PALETTES SHOW PAGE ### */
@@ -66,6 +77,20 @@ nav li {
   font-weight: 800;
   font-size: 26px;
   border: 1px solid;
+}
+
+
+
+/*### FOOTER ### */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #000000;
 }
 
 
