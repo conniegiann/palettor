@@ -13,7 +13,7 @@ class PalettesController < ApplicationController
   end
 
   def index
-    @palettes = Palette.all
+    @palettes = @current_user.palettes
   end
 
   def show

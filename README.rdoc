@@ -2,7 +2,7 @@
 
 aka PALETTOR (or until I find a clever/better name.) >.<
 
-Basic fucntionality up and running.
+Basic functionality up and running.
 
 User is able to login, create a color palette, edit and delete.
 Also, view all created palettes.
