@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>ChromaApp</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -23,7 +24,7 @@
               <% if @current_user %>
                 <li><%= link_to "Create New", new_palette_path %></li>
                 <li><%= link_to "Palette Index", palettes_path %></li>
-                <li><%= link_to "Profile", palettes_path %></li>
+                <li><%= link_to "Profile", user_path(:id => @current_user.id)%></li>
                 <li><%= link_to "Logout #{ @current_user.name }",login_path, :method => 'delete' %></li>
                 <% else %>
                 <li><%= link_to "Sign Up", new_user_path %></li>
@@ -42,7 +43,10 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">SOCIAL MEDIA LINKS HERE!</p>
+        <p class="text-muted">
+          <a href="http://twitter.com/conniecodes"><i class="fa fa-twitter"></i></a>
+          <a href="https://github.com/conniegiann"><i class="fa fa-github-alt"></i></i></a>
+        </p>
       </div>
     </footer>
 

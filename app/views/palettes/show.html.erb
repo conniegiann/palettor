@@ -25,5 +25,7 @@
 
 </div>
 
-<li><%= link_to 'Edit', edit_palette_path(@palette) %></li>
-<li><%= link_to 'Delete',  @palette, :method => 'delete' %></li>
+<% if @current_user.present? && @palette.user_id == @current_user.id %>
+  <li><%= link_to 'Edit', edit_palette_path(@palette) %></li>
+  <li><%= link_to 'Delete',  @palette, :method => 'delete' %></li>
+<% end %>

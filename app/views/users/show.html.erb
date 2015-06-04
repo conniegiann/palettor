@@ -1,0 +1,10 @@
+<h1>Profile</h1>
+
+
+<p><%= @user.name %></p>
+<li><%= image_tag(@user.image, :class => 'profile_thumb') %></li>
+<p><%= @user.occupation %></p>
+
+<li><%= link_to 'Edit Profile', edit_user_path(@user) %></li>
+
+
