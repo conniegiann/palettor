@@ -210,5 +210,33 @@ height: 200px;
 }
 
 
+.swatch_name a {
+  text-decoration: none;
+  color: black;
+}
 
+.swatch_name a:hover {
+  text-decoration: none;
+  color: hotpink;
+}
+
+.fa {
+  text-decoration: none;
+  color: grey;
+}
+
+.fa:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* #### SHARE BUTTONS #### */
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
 

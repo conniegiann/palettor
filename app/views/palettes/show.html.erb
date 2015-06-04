@@ -25,7 +25,16 @@
     <%= @palette.color5.upcase %></div>
   </div>
 
+
+  <ul class="share-buttons">
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpalettor.herokuapp.com&t=Create%20color%20palettes!" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+    <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fpalettor.herokuapp.com&text=Create%20color%20palettes!:%20https%3A%2F%2Fpalettor.herokuapp.com&via=conniecodes" target="_blank" title="Tweet"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+    <li><a href="http://www.tumblr.com/share?v=3&u=https%3A%2F%2Fpalettor.herokuapp.com&t=Create%20color%20palettes!&s=" target="_blank" title="Post to Tumblr"><i class="fa fa-tumblr-square fa-2x"></i></a></li>
+  </ul>
+
+
   <% if @current_user.present? && @palette.user_id == @current_user.id %>
+
     
   <div class="delete_edit"></div>
     <li><%= link_to 'Edit', edit_palette_path(@palette) %></li>
