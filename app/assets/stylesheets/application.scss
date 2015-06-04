@@ -23,10 +23,24 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
-  margin-left: 80px;
   padding-top: 60px;
   padding-bottom: 40px;
+}
 
+
+ul
+{
+  list-style-type: none;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 0px; 
+
+}
+
+
+li {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 
@@ -44,11 +58,28 @@ nav li {
 }
 
 
-li {
-  text-decoration: none;
+
+
+
+/*### PALETTES INDEX PAGE ### */
+
+.index_palettes {
+    margin-top: 40px;
 }
 
+/*### PALETTES INDEX PAGE ### */
+
+.new_palettes {
+    margin-top: 40px;
+}
+
+
 /*### PALETTES SHOW PAGE ### */
+
+.palette_show_container {
+  margin-top: 40px;
+}
+
 .colorbox {
   display: inline-block;
   margin: auto;
@@ -56,17 +87,24 @@ li {
 
 .swatch_name {
   font-weight: 900;
-  font-size: 18px
+  font-size: 14px
 }
+
+.swatch_name li a {
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+}
+
 
 .swatch_style {
   font-weight: 900;
-  font-size: 16px
+  font-size: 12px
 }
 
 .swatch_description {
   font-weight: 900;
-  font-size: 12px
+  font-size: 10px
 }
 
 .swatch {
@@ -76,20 +114,28 @@ li {
   text-align: center;
   font-weight: 700;
   font-size: 24px;
-  border: 1px solid;
+  border: 1px solid #9D9D9E;
 }
 
 
+.swatch_no_border {
+  width: 180px;
+  height: 180px;
+  float: left;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+
+
 /*### USER PROFILE ### */
-
-
 
 .profile_thumb {
   border-radius: 20px;
   width: 140px;
   height: 140px;
 }
-
 
 
 /*### SIGN IN / LOGIN FORMS ### */
@@ -142,7 +188,7 @@ li {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 30px;
-  background-color: #000000;
+  background-color: #1F1F1F;
   font-size: 22px;
 }
 

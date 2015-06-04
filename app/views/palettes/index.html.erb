@@ -1,27 +1,29 @@
-<h2>Users current Color Palettes:</h2>
+<div class="index_palettes">
 
-<% @palettes.each do |palette| %>
-  <ul>
-    <div class="swatch_name"><li><%= link_to(palette.name, palette) %></li></div>
-  </ul>
+  <% @palettes.each do |palette| %>
+    <ul>
+      <div class="swatch_name"><li><%= link_to(palette.name, palette) %></li></div>
+    </ul>
 
-  <div class="colorbox">
+    <div class="colorbox">
 
-    <div class="swatch" style="background-color: <%= palette.color1 %>">
-    <%= palette.color1.upcase %></div>
+      <div class="swatch_no_border" style="background-color: <%= palette.color1 %>">
+      <%= palette.color1.upcase %></div>
 
-    <div class="swatch" style="background-color: <%= palette.color2 %>">
-    <%= palette.color2.upcase %></div>
+      <div class="swatch_no_border" style="background-color: <%= palette.color2 %>">
+      <%= palette.color2.upcase %></div>
 
-    <div class="swatch" style="background-color: <%= palette.color3 %>">
-    <%= palette.color3.upcase %></div>
+      <div class="swatch_no_border" style="background-color: <%= palette.color3 %>">
+      <%= palette.color3.upcase %></div>
 
-    <div class="swatch" style="background-color: <%= palette.color4 %>">
-    <%= palette.color4.upcase %></div>
+      <div class="swatch_no_border" style="background-color: <%= palette.color4 %>">
+      <%= palette.color4.upcase %></div>
 
-    <div class="swatch" style="background-color: <%= palette.color5 %>">
-    <%= palette.color5.upcase %></div>
+      <div class="swatch_no_border" style="background-color: <%= palette.color5 %>">
+      <%= palette.color5.upcase %></div>
 
-  </div>
-<% end %>
+    </div>
+  <% end %>
+
+</div>
 

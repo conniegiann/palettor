@@ -31,8 +31,8 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'capistrano-rails', group: :development
 
 gem 'haml'
-gem 'bootstrap-sass'
 
+gem 'bootstrap-sass'
 
 gem 'remove_turbolinks'
 
@@ -45,8 +45,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
 end
-
-
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

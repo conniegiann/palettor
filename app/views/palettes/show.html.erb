@@ -1,31 +1,36 @@
-<ul>
-  <div class="swatch_name"><li><%= @palette.name %></li></div>
+<div class="palette_show_container">
 
-  <div class="swatch_style"><li><%= @palette.style %></li></div>
+  <ul>
+    <div class="swatch_name"><li><%= @palette.name %></li></div>
 
-  <div class="swatch_description"><li><%= @palette.description %></li></div>
-</ul>
+    <div class="swatch_style"><li><%= @palette.style %></li></div>
 
-<div class="colorbox">
+    <div class="swatch_description"><li><%= @palette.description %></li></div>
+  </ul>
 
-  <div class="swatch" style="background-color: <%= @palette.color1 %>">
-  <%= @palette.color1.upcase %></div>
+  <div class="colorbox">
+    <div class="swatch_no_border" style="background-color: <%= @palette.color1 %>">
+    <%= @palette.color1.upcase %></div>
 
-  <div class="swatch" style="background-color: <%= @palette.color2 %>">
-  <%= @palette.color2.upcase %></div>
+    <div class="swatch_no_border" style="background-color: <%= @palette.color2 %>">
+    <%= @palette.color2.upcase %></div>
 
-  <div class="swatch" style="background-color: <%= @palette.color3 %>">
-  <%= @palette.color3.upcase %></div>
+    <div class="swatch_no_border" style="background-color: <%= @palette.color3 %>">
+    <%= @palette.color3.upcase %></div>
 
-  <div class="swatch" style="background-color: <%= @palette.color4 %>">
-  <%= @palette.color4.upcase %></div>
+    <div class="swatch_no_border" style="background-color: <%= @palette.color4 %>">
+    <%= @palette.color4.upcase %></div>
 
-  <div class="swatch" style="background-color: <%= @palette.color5 %>">
-  <%= @palette.color5.upcase %></div>
+    <div class="swatch_no_border" style="background-color: <%= @palette.color5 %>">
+    <%= @palette.color5.upcase %></div>
+  </div>
+
+  <% if @current_user.present? && @palette.user_id == @current_user.id %>
+    
+  <div class="delete_edit"></div>
+    <li><%= link_to 'Edit', edit_palette_path(@palette) %></li>
+    <li><%= link_to 'Delete',  @palette, :method => 'delete', :data => { :confirm => "Are you sure?" } %></li>
+  </div>
+  <% end %>
 
 </div>
-
-<% if @current_user.present? && @palette.user_id == @current_user.id %>
-  <li><%= link_to 'Edit', edit_palette_path(@palette) %></li>
-  <li><%= link_to 'Delete',  @palette, :method => 'delete' %></li>
-<% end %>
