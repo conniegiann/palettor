@@ -17,40 +17,220 @@
  *= require_tree .
  *= require_self
  */
-
 @import url(//fonts.googleapis.com/css?family=Open+Sans:800italic,400,300,600,700,800,900,900italic);
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
-  padding-top: 60px;
-  padding-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
-ul
-{
-  list-style-type: none;
-  text-decoration: none;
-  text-align: left;
-  padding-left: 0px; 
-
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 0px;
 }
-
 
 li {
-  list-style-type: none;
-  text-decoration: none;
+    list-style-type: none;
+    text-decoration: none;
 }
 
-
+/* #### NAV #### */
 nav li {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 800;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
 }
-
 
 .navbar-brand {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #BF095C
+}
+
+/*### PALETTES INDEX PAGE ### */
+.index_palettes {
+    margin-top: 40px;
+}
+
+/*### PALETTES INDEX PAGE ### */
+.new_palettes {
+    margin-top: 40px;
+}
+
+/*### PALETTES SHOW PAGE ### */
+.palette_show_container {
+    margin-top: 40px;
+}
+
+.colorbox {
+    display: inline-block;
+    margin: auto;
+}
+
+.swatch_name {
+    font-weight: 900;
+    font-size: 14px
+}
+
+.swatch_name li a {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+
+.swatch_name a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.swatch_name a:hover {
+    text-decoration: none;
+    color: #BF095C;
+}
+
+.swatch_style {
+    font-weight: 900;
+    font-size: 12px
+}
+
+.swatch_description {
+    font-weight: 900;
+    font-size: 10px
+}
+
+.swatch {
+    width: 180px;
+    height: 180px;
+    float: left;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    border: 1px solid #9D9D9E;
+}
+
+.swatch_no_border {
+    width: 180px;
+    height: 180px;
+    float: left;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/*### USER PROFILE ### */
+.profile_thumb {
+    width: 200px;
+    height: 200px;
+}
+
+/*### SIGN IN / LOGIN FORMS ### */
+.form-signin {
+    max-width: 320px;
+    padding: 12px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: 8px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-control:focus {
+    border-color: initial;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.btn-primary {
+    margin-top: 6px;
+    border-color: initial;
+    background-color: #9D9D9E;
+    font-size: 13px;
+    outline: none;
+}
+
+.btn-primary:hover {
+    border-color: initial;
+    background-color: #757575;
+}
+
+/*### FOOTER ### */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #1F1F1F;
+    font-size: 22px;
+}
+
+.fa {
+    text-decoration: none;
+    color: grey;
+}
+
+.fa:hover {
+    text-decoration: none;
+    color: #BF095C;
+}
+
+/* #### SHARE BUTTONS #### */
+ul.share-buttons {
+    list-style: none;
+    padding: 0;
+}
+
+ul.share-buttons li {
+    display: inline;
+}
+
+/* #### DINOSAUR #### */
+.dinosaur {
+    width: auto;
+    max-height: 200px;
+}
+
+/* #### WELCOME LANDING PAGE #### */
+.welcome-msg {
   font-weight: 900;
   font-style: italic;
   font-size: 24px;
@@ -58,185 +238,4 @@ nav li {
 
 
 
-
-
-/*### PALETTES INDEX PAGE ### */
-
-.index_palettes {
-    margin-top: 40px;
-}
-
-/*### PALETTES INDEX PAGE ### */
-
-.new_palettes {
-    margin-top: 40px;
-}
-
-
-/*### PALETTES SHOW PAGE ### */
-
-.palette_show_container {
-  margin-top: 40px;
-}
-
-.colorbox {
-  display: inline-block;
-  margin: auto;
-}
-
-.swatch_name {
-  font-weight: 900;
-  font-size: 14px
-}
-
-.swatch_name li a {
-  text-decoration: none;
-  list-style: none;
-  text-align: left;
-}
-
-
-.swatch_style {
-  font-weight: 900;
-  font-size: 12px
-}
-
-.swatch_description {
-  font-weight: 900;
-  font-size: 10px
-}
-
-.swatch {
-  width: 180px;
-  height: 180px;
-  float: left;
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  border: 1px solid #9D9D9E;
-}
-
-
-.swatch_no_border {
-  width: 180px;
-  height: 180px;
-  float: left;
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-
-
-/*### USER PROFILE ### */
-
-.profile_thumb {
-width: 200px;
-height: 200px; 
-}
-
-
-/*### SIGN IN / LOGIN FORMS ### */
-
-.form-signin {
-  max-width: 320px;
-  padding: 12px;
-  margin: 0 auto;
-}
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
-}
-.form-signin .checkbox {
-  font-weight: normal;
-}
-.form-signin .form-control {
-  position: relative;
-  height: auto;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px;
-  font-size: 12px;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.form-signin input[type="email"] {
-  margin-bottom: 8px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signin input[type="password"] {
-  margin-bottom: -1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-
-
-.form-control:focus {
-  border-color: initial;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-}
-
-.btn-primary{
-  margin-top: 6px;
-  border-color: initial;
-  background-color: #9D9D9E;
-  font-size: 13px;
-  outline: none;
-}
-
-.btn-primary:hover {
-  border-color: initial;
-  background-color: #757575;
-}
-
-
-
-
-/*### FOOTER ### */
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 30px;
-  background-color: #1F1F1F;
-  font-size: 22px;
-}
-
-
-.swatch_name a {
-  text-decoration: none;
-  color: black;
-}
-
-.swatch_name a:hover {
-  text-decoration: none;
-  color: hotpink;
-}
-
-.fa {
-  text-decoration: none;
-  color: grey;
-}
-
-.fa:hover {
-  text-decoration: none;
-  color: white;
-}
-
-/* #### SHARE BUTTONS #### */
-ul.share-buttons{
-  list-style: none;
-  padding: 0;
-}
-
-ul.share-buttons li{
-  display: inline;
-}
 
