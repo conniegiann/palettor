@@ -1,1 +1,29 @@
-<h1>user edit page</h1>
+<h3>Edit Profile</h3>
+
+<%= form_for @current_user, :method => :patch do |f| %>
+
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+
+  <p>
+    <%= f.label :occupation %>
+    <%= f.text_field :occupation %>
+  </p>
+
+  <p>
+    <%= f.label :website %>
+    <%= f.text_field :website %>
+  </p>
+
+  <p>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+  </p>
+
+
+  <%= f.submit %>
+
+<% end %>

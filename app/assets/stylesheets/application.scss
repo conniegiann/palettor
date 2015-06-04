@@ -27,7 +27,6 @@ body {
   padding-bottom: 40px;
 }
 
-
 ul
 {
   list-style-type: none;
@@ -132,9 +131,8 @@ nav li {
 /*### USER PROFILE ### */
 
 .profile_thumb {
-  border-radius: 20px;
-  width: 140px;
-  height: 140px;
+width: 200px;
+height: 200px; 
 }
 
 
@@ -170,21 +168,34 @@ nav li {
   border-bottom-left-radius: 0;
 }
 .form-signin input[type="password"] {
-  margin-bottom: 8px;
+  margin-bottom: -1px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
 
+
+.form-control:focus {
+  border-color: initial;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
 .btn-primary{
+  margin-top: 6px;
+  border-color: initial;
   background-color: #9D9D9E;
   font-size: 13px;
   outline: none;
 }
 
 .btn-primary:hover {
+  border-color: initial;
   background-color: #757575;
 }
+
+
+
 
 /*### FOOTER ### */
 .footer {

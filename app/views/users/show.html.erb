@@ -1,9 +1,8 @@
-<h1>Profile</h1>
+<h3>Profile</h3><br>
 
-<p><%= @user.name %></p>
-<li><%= image_tag(@user.image, :class => 'profile_thumb') %></li>
-<p><%= @user.occupation %></p>
+<h4><%= @user.name %></h4>
+<li><%= image_tag(@user.image, :class => 'profile_thumb') %></li><br>
+<p>Occupation: <%= @user.occupation %></p>
+<p>Website: <a href="<%= @user.website %>"><%= @user.website %></a></p>
 
 <li><%= link_to 'Edit Profile', edit_user_path(@user) %></li>
-
-

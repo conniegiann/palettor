@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
     
     if @user.save
-      session[:user_id] = user.id
+      session[:user_id] = @user.id
       redirect_to root_path    
     else
       render :new
@@ -16,6 +16,7 @@ class UsersController < ApplicationController
     
   def show
     set_user
+    @user = User.find params[:id]
   end
 
 
@@ -23,6 +24,10 @@ class UsersController < ApplicationController
   end
 
   def update
+    # raise 'hello'
+    @user = User.find params[:id]
+    @user.update user_params
+    redirect_to @user
   end 
 
 private
@@ -32,7 +37,7 @@ private
   end
 
   def user_params
-    params.require(:user).permit(:name, :password, :password_confirmation, :email)
+    params.require(:user).permit(:name, :password, :password_confirmation, :email, :occupation, :image, :website)
   end
 
 end
