@@ -20,17 +20,17 @@
           <a class="navbar-brand" href="#">PALETTOR</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
               <% if @current_user %>
                 <li><%= link_to "Create New", new_palette_path %></li>
                 <li><%= link_to "Palette Index", palettes_path %></li>
                 <li><%= link_to "Profile", user_path(:id => @current_user.id)%></li>
                 <li><%= link_to "Logout #{ @current_user.name }",login_path, :method => 'delete' %></li>
-                <% else %>
+              <% else %>
                 <li><%= link_to "Sign Up", new_user_path %></li>
                 <li><%= link_to "Login", login_path %></li>
               <% end %>
-          </ul>
+                </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
